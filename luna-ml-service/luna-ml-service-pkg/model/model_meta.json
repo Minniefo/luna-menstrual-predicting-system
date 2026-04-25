@@ -1,0 +1,21 @@
+{
+  "features": [
+    "hr_mean",
+    "temp_mean",
+    "sleep_disturbance_score",
+    "hr_mean_3",
+    "temp_mean_3",
+    "sleep_3",
+    "cycle_progress",
+    "cycle_progress_norm",
+    "temp_cycle_interaction"
+  ],
+  "target": "period_soon",
+  "classes": [
+    "No period soon (0)",
+    "Period soon (1)"
+  ],
+  "accuracy": 1.0,
+  "description": "RandomForestClassifier \u2014 predicts if period will start within 5 days",
+  "version": "1.0.0"
+}

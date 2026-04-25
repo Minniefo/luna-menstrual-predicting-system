@@ -1,0 +1,31 @@
+{
+  "features": [
+    "hr_mean",
+    "temp_mean",
+    "sleep_disturbance_score",
+    "hr_mean_3",
+    "temp_mean_3",
+    "sleep_3",
+    "cycle_progress",
+    "cycle_progress_norm",
+    "temp_cycle_interaction"
+  ],
+  "target": "period_soon",
+  "classes": [
+    "No period soon (0)",
+    "Period soon (1)"
+  ],
+  "accuracy": 0.9054,
+  "training_rows": 11075,
+  "test_rows": 2769,
+  "dataset": "mcPHASES v1.0.0 (42 subjects)",
+  "description": "Notebook-exact 9-feature RandomForest",
+  "version": "1.0.0",
+  "n_features": 9,
+  "phase_encoding": {
+    "Fertility": 0,
+    "Follicular": 1,
+    "Luteal": 2,
+    "Menstrual": 3
+  }
+}

@@ -1,0 +1,2613 @@
+[
+  {
+    "timestamp": "2026-04-20T17:21:19.885Z",
+    "temp_c": 36.5,
+    "bpm": 78,
+    "acc_mag": 1.05,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T17:21:34.578Z",
+    "temp_c": 36.7,
+    "bpm": 82,
+    "acc_mag": 1.1,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T17:21:43.879Z",
+    "temp_c": 36.6,
+    "bpm": 80,
+    "acc_mag": 1.08,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:08:18.620Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:21.645Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:24.523Z",
+    "temp_c": 31.22,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:27.534Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:30.644Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:33.528Z",
+    "temp_c": 31.21,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:36.540Z",
+    "temp_c": 31.21,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:39.538Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:42.544Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:45.545Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:48.672Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:51.567Z",
+    "temp_c": 31.24,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:54.667Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:08:57.550Z",
+    "temp_c": 31.24,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:00.550Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:03.555Z",
+    "temp_c": 31.22,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:06.697Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:09.571Z",
+    "temp_c": 31.21,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:12.548Z",
+    "temp_c": 31.22,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:15.576Z",
+    "temp_c": 31.23,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:18.695Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:21.575Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:24.555Z",
+    "temp_c": 31.24,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:27.591Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:30.555Z",
+    "temp_c": 31.24,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:33.559Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:36.715Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:39.588Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:42.564Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.97,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:45.599Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:48.683Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:51.566Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:54.727Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:09:57.603Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:00.576Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:03.607Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:06.576Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:09.575Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:12.587Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:15.631Z",
+    "temp_c": 31.31,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:18.683Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:21.627Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:24.596Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:27.627Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:30.593Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:33.838Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:36.600Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:39.633Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:42.622Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:45.638Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:48.610Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:51.595Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:54.634Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:10:57.600Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:00.611Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:03.745Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:06.622Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:09.606Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:12.632Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:15.610Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:18.612Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:21.781Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:24.641Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:27.702Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:30.641Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:33.748Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:36.647Z",
+    "temp_c": 31.24,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:39.634Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:42.661Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:45.742Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:48.673Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:51.790Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:54.662Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:11:57.632Z",
+    "temp_c": 31.25,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:00.670Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:03.749Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:06.680Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:09.799Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:12.680Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:15.648Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:18.684Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:21.654Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:24.698Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:27.648Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:30.884Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:33.653Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:36.700Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:39.663Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:42.702Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:45.662Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:48.720Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:51.674Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:54.720Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:12:57.838Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:00.676Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:03.682Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:06.673Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:09.709Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:12.892Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:16.338Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:18.936Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:21.705Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:24.685Z",
+    "temp_c": 31.27,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:27.698Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:30.868Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:33.768Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:36.841Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:39.709Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:42.746Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:45.704Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:48.816Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:51.743Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:54.702Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:13:57.739Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:00.760Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:03.697Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:06.871Z",
+    "temp_c": 31.31,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:09.705Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:12.714Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:15.853Z",
+    "temp_c": 31.28,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:18.759Z",
+    "temp_c": 31.26,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:21.744Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:24.730Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:27.831Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:30.768Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:33.752Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:36.718Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:39.726Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:42.910Z",
+    "temp_c": 31.32,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:45.754Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:48.771Z",
+    "temp_c": 31.32,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:51.804Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:54.784Z",
+    "temp_c": 31.32,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:14:57.831Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:00.856Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:03.731Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:06.848Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:09.794Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:12.786Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:15.754Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:18.778Z",
+    "temp_c": 31.31,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:21.788Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:24.823Z",
+    "temp_c": 31.31,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:27.797Z",
+    "temp_c": 31.29,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:30.753Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:33.825Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:36.940Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 1,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:39.763Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:42.763Z",
+    "temp_c": 31.32,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:45.875Z",
+    "temp_c": 31.32,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:48.797Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:51.856Z",
+    "temp_c": 31.3,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:54.905Z",
+    "temp_c": 31.33,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:15:58.037Z",
+    "temp_c": 31.33,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:00.923Z",
+    "temp_c": 31.33,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:03.849Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:06.858Z",
+    "temp_c": 31.35,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:09.803Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:12.771Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 1,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:26.474Z",
+    "temp_c": 31.35,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:28.928Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:32.151Z",
+    "temp_c": 31.35,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:35.214Z",
+    "temp_c": 31.36,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:38.102Z",
+    "temp_c": 31.37,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:40.959Z",
+    "temp_c": 31.36,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:43.970Z",
+    "temp_c": 31.35,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:46.974Z",
+    "temp_c": 31.33,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:49.963Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:52.908Z",
+    "temp_c": 31.33,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:56.368Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:16:59.120Z",
+    "temp_c": 31.35,
+    "bpm": 0,
+    "acc_mag": 0.97,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:02.311Z",
+    "temp_c": 31.34,
+    "bpm": 0,
+    "acc_mag": 0.88,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:04.966Z",
+    "temp_c": 31.5,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:07.993Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:10.987Z",
+    "temp_c": 31.69,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:13.980Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:17.165Z",
+    "temp_c": 31.7,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:20.079Z",
+    "temp_c": 31.7,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:22.989Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:26.205Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:28.944Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:32.168Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:34.931Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.97,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:37.970Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:41.038Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:43.985Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:46.966Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:49.949Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:53.153Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:55.986Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:17:59.091Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:01.999Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:04.953Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.97,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:07.981Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:11.091Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:14.075Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:16.960Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:19.984Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:22.971Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.97,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:25.988Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:32.012Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:34.968Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:38.018Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:40.980Z",
+    "temp_c": 31.6,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:43.971Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:46.988Z",
+    "temp_c": 31.6,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:50.014Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:52.995Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:56.130Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:18:59.008Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:01.983Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:04.999Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:08.106Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:11.003Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:13.983Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:17.051Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:20.086Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:23.076Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:26.152Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:29.002Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:32.008Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:35.013Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:38.001Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:41.031Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:44.159Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:47.039Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:50.004Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:53.054Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:56.015Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:19:59.011Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:02.042Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:05.075Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:08.057Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:11.054Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:14.113Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:17.070Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:20.037Z",
+    "temp_c": 31.71,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:23.076Z",
+    "temp_c": 31.7,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:26.052Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:29.019Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:32.042Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:35.146Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:38.063Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:41.024Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:44.067Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:47.052Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:50.052Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 1,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:53.156Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:56.065Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:20:59.040Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:02.081Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:05.073Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:08.055Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:11.219Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:14.060Z",
+    "temp_c": 31.69,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:17.123Z",
+    "temp_c": 31.69,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:20.101Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:23.173Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:26.094Z",
+    "temp_c": 31.7,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:29.084Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:32.080Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:35.084Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:38.081Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:41.076Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:44.086Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:47.073Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:50.097Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:53.082Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:56.174Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:21:59.223Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:02.135Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:05.096Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:08.110Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:11.076Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:14.132Z",
+    "temp_c": 31.68,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:17.089Z",
+    "temp_c": 31.69,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:20.140Z",
+    "temp_c": 31.7,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:23.110Z",
+    "temp_c": 31.69,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:26.086Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:29.142Z",
+    "temp_c": 31.67,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:32.091Z",
+    "temp_c": 31.66,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:35.122Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:38.175Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:41.101Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:44.098Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:47.267Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:50.221Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:53.095Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:56.100Z",
+    "temp_c": 31.65,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:22:59.113Z",
+    "temp_c": 31.64,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:02.314Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:05.194Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:08.143Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:11.124Z",
+    "temp_c": 31.61,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:14.164Z",
+    "temp_c": 31.61,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:17.130Z",
+    "temp_c": 31.61,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:20.237Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:23.111Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:26.264Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:29.159Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:32.117Z",
+    "temp_c": 31.63,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:35.156Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:38.245Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:41.338Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:44.315Z",
+    "temp_c": 31.62,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:47.194Z",
+    "temp_c": 31.61,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:50.143Z",
+    "temp_c": 31.6,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:53.139Z",
+    "temp_c": 31.6,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:56.268Z",
+    "temp_c": 31.61,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:23:59.206Z",
+    "temp_c": 31.6,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:02.177Z",
+    "temp_c": 31.59,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:05.206Z",
+    "temp_c": 31.59,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:08.186Z",
+    "temp_c": 31.59,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:11.140Z",
+    "temp_c": 31.58,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:14.146Z",
+    "temp_c": 31.57,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:17.160Z",
+    "temp_c": 31.57,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:20.181Z",
+    "temp_c": 31.59,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:23.198Z",
+    "temp_c": 31.58,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:26.177Z",
+    "temp_c": 31.57,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:29.342Z",
+    "temp_c": 31.54,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:32.186Z",
+    "temp_c": 31.56,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:35.274Z",
+    "temp_c": 31.55,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:38.192Z",
+    "temp_c": 31.55,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:41.157Z",
+    "temp_c": 31.54,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:24:44.200Z",
+    "temp_c": 31.54,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:34.389Z",
+    "temp_c": 31.16,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:34.505Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:37.739Z",
+    "temp_c": 31.17,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:40.773Z",
+    "temp_c": 31.16,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:43.517Z",
+    "temp_c": 31.16,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:46.674Z",
+    "temp_c": 31.17,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:49.515Z",
+    "temp_c": 31.16,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:52.560Z",
+    "temp_c": 31.15,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:55.715Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:31:58.506Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 1,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:01.538Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:04.754Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:07.527Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:10.686Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:13.537Z",
+    "temp_c": 31.18,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:16.514Z",
+    "temp_c": 31.19,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:19.550Z",
+    "temp_c": 31.19,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:22.682Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 1,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:25.514Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:28.518Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:31.547Z",
+    "temp_c": 31.19,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:34.521Z",
+    "temp_c": 31.2,
+    "bpm": 0,
+    "acc_mag": 0.99,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:32:37.564Z",
+    "temp_c": 31.22,
+    "bpm": 0,
+    "acc_mag": 0.98,
+    "lead_off": true
+  },
+  {
+    "timestamp": "2026-04-20T18:36:13.202Z",
+    "temp_c": 31.55,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:15.805Z",
+    "temp_c": 31.54,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:18.679Z",
+    "temp_c": 31.54,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:21.735Z",
+    "temp_c": 31.54,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:24.829Z",
+    "temp_c": 31.52,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:27.879Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:30.711Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:33.672Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:36.711Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:39.769Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:42.655Z",
+    "temp_c": 31.48,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:45.838Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:48.751Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:51.691Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:54.676Z",
+    "temp_c": 31.52,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:36:57.826Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:00.674Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:03.691Z",
+    "temp_c": 31.5,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:06.823Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:09.690Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:12.736Z",
+    "temp_c": 31.51,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  },
+  {
+    "timestamp": "2026-04-20T18:37:15.709Z",
+    "temp_c": 31.49,
+    "bpm": 75,
+    "acc_mag": 0,
+    "lead_off": false
+  }
+]
