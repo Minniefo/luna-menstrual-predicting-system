@@ -18,7 +18,8 @@ exports.getNextPeriod = async (req, res) => {
 
     if (user.mlPredictionState && user.mlPredictionState.prediction) {
       const state = user.mlPredictionState;
-      accuracyStr = `Edge ML ${(state.confidence * 100).toFixed(0)}%`;
+      const confPercent = state.confidence * 100;
+      accuracyStr = `Edge ML ${confPercent >= 100 ? 99 : confPercent.toFixed(0)}%`;
       inferenceMethod = "iot_ml_pipeline";
 
       if (state.prediction === "Period likely soon") {

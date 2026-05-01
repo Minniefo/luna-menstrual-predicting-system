@@ -92,7 +92,9 @@ const buildCycleOverview = (user, readings = [], mlPrediction = null) => {
         refinedByWearable: displayState,
         rawPrediction: mlPrediction.prediction,
         daysRemaining: daysUntilNextPeriod(basePrediction), // Base calendar until we have exact date ML
-        confidence: mlPrediction.confidence ? `${Math.round(mlPrediction.confidence * 100)}%` : 'Unknown',
+        confidence: mlPrediction.confidence 
+          ? `${Math.min(99, Math.round(mlPrediction.confidence * 100))}%` 
+          : 'Unknown',
         signals: mlPrediction.features_used ? Object.entries(mlPrediction.features_used).map(([k,v]) => `${k}: ${Number(v).toFixed(2)}`) : ['Processed by Wearable Backend natively'],
         timestamp: mlPrediction.timestamp
       }

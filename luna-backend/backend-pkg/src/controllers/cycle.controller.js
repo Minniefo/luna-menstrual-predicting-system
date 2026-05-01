@@ -55,7 +55,7 @@ exports.getPrediction = async (req, res) => {
       data: {
         nextPeriodDate: refinedNextPeriod.toISOString().split('T')[0],
         daysRemaining:  cycleService.daysUntilNextPeriod(refinedNextPeriod),
-        accuracy:       `${Math.round(confidence * 100)}%`,
+        accuracy:       `${Math.min(99, Math.round(confidence * 100))}%`,
         signals,
         lastPeriodStart: user.lastPeriodStart,
         cycleLength:     user.cycleLength,

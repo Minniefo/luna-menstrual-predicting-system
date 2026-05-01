@@ -81,7 +81,7 @@ const checkMLPrediction = async (user, readings) => {
     if (existing) return null;
 
     return createAlert(user._id, 'period_prediction', 'Edge ML: Period Soon',
-      `Our ML model predicts: "${state.prediction}" with ${(state.confidence * 100).toFixed(0)}% confidence.`, 'high');
+      `Our ML model predicts: "${state.prediction}" with ${Math.min(99, Math.round(state.confidence * 100))}% confidence.`, 'high');
   }
   return null;
 };
@@ -110,7 +110,7 @@ const evaluateAllAlerts = async (user, readings) => {
 const buildPredictionSummary = (user, readings) => {
   const { refinedNextPeriod, confidence, signals } = refineWithPhysiologicalData(readings, user.lastPeriodStart, user.cycleLength);
   let days = daysUntilNextPeriod(refinedNextPeriod);
-  let accuracy = `${Math.round(confidence * 100)}%`;
+  let accuracy = `${Math.min(99, Math.round(confidence * 100))}%`;
   let finalDateStr = refinedNextPeriod.toISOString().split('T')[0];
 
   // Override with ML state if it indicates period soon
@@ -118,7 +118,8 @@ const buildPredictionSummary = (user, readings) => {
     const state = user.mlPredictionState;
     if (state.prediction.includes("soon") || state.prediction.includes("likely")) {
       days = 2; // Threshold for "Soon" banner in Flutter
-      accuracy = `Edge ML ${(state.confidence * 100).toFixed(0)}%`;
+      const confPercent = state.confidence * 100;
+      accuracy = `Edge ML ${confPercent >= 100 ? 99 : confPercent.toFixed(0)}%`;
     }
   }
 

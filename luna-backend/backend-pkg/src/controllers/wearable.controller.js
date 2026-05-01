@@ -173,6 +173,13 @@ exports.getReadings = async (req, res) => {
       if (!isNaN(parsed)) dayCount = parsed;
     } else if (limit) {
       dayCount = parseInt(limit);
+    } else if (aggregated.length > 0) {
+      // ALL TIME: calculate days from oldest reading to today
+      const oldestDate = new Date(aggregated[0].date);
+      const today = new Date();
+      const diffTime = today.getTime() - oldestDate.getTime();
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
+      dayCount = Math.max(14, diffDays);
     }
 
     const finalReadings = fillDailyGaps(aggregated, dayCount);
