@@ -415,6 +415,7 @@ class TempLineChart extends StatelessWidget {
       lineBarsData: [LineChartBarData(
         spots: spots,
         isCurved: true,
+        preventCurveOverShooting: true, // Prevents line from dipping below axes
         color: AppTheme.ovulationColor,
         barWidth: 3,
         dotData: const FlDotData(show: true),
@@ -423,6 +424,7 @@ class TempLineChart extends StatelessWidget {
           color: AppTheme.ovulationColor.withOpacity(0.1),
         ),
       )],
+      clipData: const FlClipData.all(), // Ensures no overlap with other widgets
     ));
   }
 }

@@ -27,7 +27,13 @@ const getReadings = async (userId, days = 14) => {
     { $project: { date: "$_id", heartRate: 1, temperature: 1, sleepHours: 1, sleepDisturbances: 1, _id: 0 } }
   ]);
 
-  return fillDailyGaps(aggregated, days);
+  const filled = fillDailyGaps(aggregated, days);
+  
+  // Sanitize data: Filter out physiologically impossible temperatures (sensor noise)
+  return filled.map(r => ({
+    ...r,
+    temperature: (r.temperature !== null && r.temperature < 35.0) ? null : r.temperature
+  }));
 };
 
 exports.getSnapshot = async (req, res) => {
