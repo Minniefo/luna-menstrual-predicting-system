@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primary       = Color(0xFFE91E8C);
-  static const Color primaryLight  = Color(0xFFF8BBD9);
-  static const Color primaryDark   = Color(0xFFC2185B);
-  static const Color accent        = Color(0xFFFF6B9D);
+  static const Color primary       = Color(0xFFD47070);
+  static const Color primaryLight  = Color(0xFFF0B4B4);
+  static const Color primaryDark   = Color(0xFFA84E4E);
+  static const Color accent        = Color(0xFFE08E8E);
 
   static const Color menstrualColor  = Color(0xFFE91E63);
   static const Color follicularColor = Color(0xFF4CAF50);
@@ -25,7 +25,7 @@ class AppTheme {
   static const Color warning = Color(0xFFF44336);
 
   static const LinearGradient primaryGradient = LinearGradient(
-    colors: [Color(0xFFE91E8C), Color(0xFFFF6B9D)],
+    colors: [Color(0xFFD47070), Color(0xFFE08E8E)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
