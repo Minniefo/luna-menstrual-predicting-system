@@ -151,6 +151,7 @@ class ApiService {
   // ── Wearable ──────────────────────────────────────────────────────────────
   static Future<Map<String, dynamic>> getLatestReading()  => _get('/wearable/readings/latest');
   static Future<Map<String, dynamic>> getSyncStatus()     => _get('/wearable/sync-status');
+  static Future<Map<String, dynamic>> getDrilldown(String date) => _get('/wearable/drilldown?date=$date');
   static Future<Map<String, dynamic>> getReadings({String? from, String? to, String? range}) {
     var q = '';
     if (range != null) {

@@ -433,13 +433,15 @@ class TempLineChart extends StatelessWidget {
 class CombinedSensorChart extends StatelessWidget {
   final List<Map<String, dynamic>> data;
   final int? focusedIndex;
-  final Function(int?)? onFocusChange;
+  final Function(int)? onFocusChange;
+  final bool isHourly;
 
   const CombinedSensorChart({
     super.key,
     required this.data,
     this.focusedIndex,
     this.onFocusChange,
+    this.isHourly = false,
   });
 
   @override
@@ -508,10 +510,19 @@ class CombinedSensorChart extends StatelessWidget {
           getTitlesWidget: (v, _) {
             final idx = v.toInt();
             if (idx >= 0 && idx < data.length) {
-              bool show = data.length < 10 || idx == 0 || idx == data.length - 1 || idx == (data.length / 2).floor();
-              if (show) {
-                final d = (data[idx]['date'] as String?) ?? '';
-                return Text(d.length > 5 ? d.substring(5) : d, style: AppTheme.caption);
+              if (isHourly) {
+                // For hourly drilldown, show labels every 4 hours or start/end
+                bool show = idx == 0 || idx == data.length - 1 || idx % 4 == 0;
+                if (show) {
+                  final time = (data[idx]['time'] as String?) ?? '';
+                  return Text(time, style: AppTheme.caption.copyWith(fontSize: 9));
+                }
+              } else {
+                bool show = data.length < 10 || idx == 0 || idx == data.length - 1 || idx == (data.length / 2).floor();
+                if (show) {
+                  final d = (data[idx]['date'] as String?) ?? '';
+                  return Text(d.length > 5 ? d.substring(5) : d, style: AppTheme.caption);
+                }
               }
             }
             return const Text('');
@@ -565,12 +576,14 @@ class SleepBarChart extends StatelessWidget {
   final List<Map<String, dynamic>> data;
   final int? focusedIndex;
   final Function(int?)? onFocusChange;
+  final bool isHourly;
 
   const SleepBarChart({
     super.key,
     required this.data,
     this.focusedIndex,
     this.onFocusChange,
+    this.isHourly = false,
   });
 
   @override
@@ -626,10 +639,18 @@ class SleepBarChart extends StatelessWidget {
           getTitlesWidget: (v, _) {
             final idx = v.toInt();
             if (idx >= 0 && idx < data.length) {
-              bool show = data.length < 15 || idx % (data.length / 5).ceil() == 0;
-              if (show) {
-                final d = (data[idx]['date'] as String?) ?? '';
-                return Text(d.length >= 8 ? d.substring(8) : d, style: AppTheme.caption);
+              if (isHourly) {
+                bool show = idx == 0 || idx == data.length - 1 || idx % 4 == 0;
+                if (show) {
+                  final time = (data[idx]['time'] as String?) ?? '';
+                  return Text(time, style: AppTheme.caption.copyWith(fontSize: 8));
+                }
+              } else {
+                bool show = data.length < 10 || idx == 0 || idx == data.length - 1 || idx == (data.length / 2).floor();
+                if (show) {
+                  final d = (data[idx]['date'] as String?) ?? '';
+                  return Text(d.length > 5 ? d.substring(5) : d, style: AppTheme.caption);
+                }
               }
             }
             return const Text('');

@@ -19,6 +19,11 @@ class _TrendsScreenState extends State<TrendsScreen> {
   bool _loading = true;
   String? _error;
 
+  // Drill-down state
+  bool _isDrillDown = false;
+  List<Map<String, dynamic>> _hourlyReadings = [];
+  String? _drillDownDate;
+
   @override
   void initState() {
     super.initState();
@@ -53,6 +58,32 @@ class _TrendsScreenState extends State<TrendsScreen> {
         _loading = false;
       });
     }
+  }
+
+  Future<void> _enterDrillDown(String date) async {
+    setState(() { _loading = true; _isDrillDown = true; _drillDownDate = date; _focusedIndex = null; });
+    try {
+      final res = await ApiService.getDrilldown(date);
+      if (res['success'] == true) {
+        setState(() {
+          _hourlyReadings = (res['data']['readings'] as List).cast<Map<String, dynamic>>();
+          _loading = false;
+        });
+      } else {
+        setState(() { _error = res['message']; _loading = false; });
+      }
+    } catch (e) {
+      setState(() { _error = 'Connection error'; _loading = false; });
+    }
+  }
+
+  void _exitDrillDown() {
+    setState(() {
+      _isDrillDown = false;
+      _hourlyReadings = [];
+      _drillDownDate = null;
+      _focusedIndex = null;
+    });
   }
 
   double _calculateAvg(String key) {
@@ -94,8 +125,9 @@ class _TrendsScreenState extends State<TrendsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final activeData = _isDrillDown ? _hourlyReadings : _readings;
     final Map<String, dynamic>? focusedReading = 
-        (_focusedIndex != null && _focusedIndex! < _readings.length) ? _readings[_focusedIndex!] : null;
+        (_focusedIndex != null && _focusedIndex! < activeData.length) ? activeData[_focusedIndex!] : null;
 
     return Scaffold(
       backgroundColor: AppTheme.background,
@@ -135,9 +167,18 @@ class _TrendsScreenState extends State<TrendsScreen> {
                     height: 260,
                     child: LunaCard(
                       child: CombinedSensorChart(
-                        data: _readings,
+                        data: activeData,
+                        isHourly: _isDrillDown,
                         focusedIndex: _focusedIndex,
-                        onFocusChange: (idx) => setState(() => _focusedIndex = idx),
+                        onFocusChange: (idx) {
+                          if (!_isDrillDown) {
+                            // On multi-day view, a tap triggers drill-down
+                            final date = _readings[idx]['date'];
+                            if (date != null) _enterDrillDown(date);
+                          } else {
+                            setState(() => _focusedIndex = idx);
+                          }
+                        },
                       ),
                     ),
                   ),
@@ -153,7 +194,8 @@ class _TrendsScreenState extends State<TrendsScreen> {
                     height: 160,
                     child: LunaCard(
                       child: SleepBarChart(
-                        data: _readings,
+                        data: activeData,
+                        isHourly: _isDrillDown,
                         focusedIndex: _focusedIndex,
                         onFocusChange: (idx) => setState(() => _focusedIndex = idx),
                       ),
@@ -187,6 +229,27 @@ class _TrendsScreenState extends State<TrendsScreen> {
   }
 
   Widget _buildAnalyticalHeader() {
+    if (_isDrillDown) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Daily Breakdown', style: AppTheme.heading2),
+              TextButton.icon(
+                onPressed: _exitDrillDown,
+                icon: const Icon(Icons.arrow_back, size: 16),
+                label: const Text('Back to Trends'),
+                style: TextButton.styleFrom(foregroundColor: AppTheme.primary),
+              ),
+            ],
+          ),
+          Text('Detailed hourly view for ${_drillDownDate ?? ""}', style: AppTheme.caption),
+          const SizedBox(height: 12),
+        ],
+      );
+    }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

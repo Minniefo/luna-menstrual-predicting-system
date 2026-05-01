@@ -184,6 +184,68 @@ exports.getReadings = async (req, res) => {
   }
 };
 
+exports.getDailyDrilldown = async (req, res) => {
+  try {
+    const { date } = req.query; // Expects YYYY-MM-DD
+    if (!date) return res.status(400).json({ success: false, message: 'Date parameter required' });
+
+    const filter = { 
+      userId: new mongoose.Types.ObjectId(req.user.id),
+      date: date
+    };
+
+    const aggregated = await SensorReading.aggregate([
+      { $match: filter },
+      {
+        $group: {
+          _id: { $hour: "$createdAt" },
+          heartRate: { $avg: "$heartRate" },
+          temperature: { $avg: "$temperature" },
+          sleepDisturbances: { $sum: "$sleepDisturbances" },
+        }
+      },
+      { $sort: { _id: 1 } }
+    ]);
+
+    // Fill 24 hour buckets
+    const hourly = [];
+    for (let h = 0; h < 24; h++) {
+      const existing = aggregated.find(a => a._id === h);
+      const hourStr = `${h.toString().padStart(2, '0')}:00`;
+      
+      if (existing) {
+        hourly.push({
+          time: hourStr,
+          heartRate: Math.round(existing.heartRate),
+          temperature: parseFloat(existing.temperature.toFixed(2)),
+          sleepDisturbances: existing.sleepDisturbances,
+          isPlaceholder: false
+        });
+      } else {
+        hourly.push({
+          time: hourStr,
+          heartRate: null,
+          temperature: null,
+          sleepDisturbances: 0,
+          isPlaceholder: true
+        });
+      }
+    }
+
+    return res.json({ 
+      success: true, 
+      data: { 
+        date,
+        readings: hourly,
+        total: aggregated.length 
+      } 
+    });
+  } catch (err) {
+    console.error("getDailyDrilldown Error:", err);
+    return res.status(500).json({ success: false, message: err.message });
+  }
+};
+
 exports.getLatestReading = async (req, res) => {
   try {
     const latest = await SensorReading.findOne({ userId: req.user.id })
