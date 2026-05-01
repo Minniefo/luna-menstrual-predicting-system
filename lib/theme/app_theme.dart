@@ -6,15 +6,15 @@ class AppTheme {
   static const Color primaryDark   = Color(0xFFA84E4E);
   static const Color accent        = Color(0xFFE08E8E);
 
-  static const Color menstrualColor  = Color(0xFFE91E63);
+  static const Color menstrualColor  = Color(0xFFC06C84);
   static const Color follicularColor = Color(0xFF4CAF50);
-  static const Color ovulationColor  = Color(0xFFFF9800);
-  static const Color lutealColor     = Color(0xFF9C27B0);
+  static const Color ovulationColor  = Color(0xFFE6A756);
+  static const Color lutealColor     = Color(0xFF8D72A8);
 
   static const Color background  = Color(0xFFFDF6F9);
   static const Color surface     = Color(0xFFFFFFFF);
-  static const Color cardBg      = Color(0xFFFFF0F7);
-  static const Color divider     = Color(0xFFF0E0EB);
+  static const Color cardBg      = Color(0xFFFFF5F5);
+  static const Color divider     = Color(0xFFF2E4E4);
 
   static const Color textPrimary   = Color(0xFF1A1A2E);
   static const Color textSecondary = Color(0xFF6B7280);
