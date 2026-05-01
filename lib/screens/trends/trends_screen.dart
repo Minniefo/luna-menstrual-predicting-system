@@ -348,7 +348,7 @@ class _TrendsScreenState extends State<TrendsScreen> {
             children: [
               MetricCard(
                 label: 'METABOLIC',
-                value: '${temp.toStringAsFixed(1)}°C',
+                value: '${(temp ?? 0.0).toStringAsFixed(1)}°C',
                 status: focused != null ? 'Punctual' : 'Avg Temp',
                 icon: Icons.device_thermostat,
                 color: AppTheme.ovulationColor,
@@ -366,7 +366,7 @@ class _TrendsScreenState extends State<TrendsScreen> {
             children: [
               MetricCard(
                 label: 'SLEEP QUALITY',
-                value: '${sleep.toStringAsFixed(1)}h',
+                value: '${(sleep ?? 0.0).toStringAsFixed(1)}h',
                 status: 'Consistency',
                 icon: Icons.bedtime,
                 color: AppTheme.lutealColor,
