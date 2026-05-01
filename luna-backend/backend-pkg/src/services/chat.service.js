@@ -22,7 +22,7 @@ class ChatService {
 
     // 3. Call Gemini
     try {
-      // Use Gemini 2.0 Flash as per user's AI Studio availability
+      // Use Gemini 1.5 Flash as it is widely available
       const modelName = 'gemini-2.5-flash'; 
       const model = genAI.getGenerativeModel({ model: modelName });
       const result = await model.generateContent(prompt);

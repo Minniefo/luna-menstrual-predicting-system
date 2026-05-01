@@ -52,12 +52,12 @@ class ApiService {
     return jsonDecode(res.body);
   }
 
-  static Future<Map<String, dynamic>> _post(String path, Map<String, dynamic> body, {bool auth = true}) async {
+  static Future<Map<String, dynamic>> _post(String path, Map<String, dynamic> body, {bool auth = true, int timeoutSeconds = 45}) async {
     final res = await http.post(
       Uri.parse('$baseUrl$path'),
       headers: await _headers(auth: auth),
       body: jsonEncode(body),
-    ).timeout(const Duration(seconds: 15));
+    ).timeout(Duration(seconds: timeoutSeconds));
     return jsonDecode(res.body);
   }
 
