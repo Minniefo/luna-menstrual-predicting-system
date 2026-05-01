@@ -210,15 +210,33 @@ class _TrendsScreenState extends State<TrendsScreen> {
                     subtitle: 'Cycle distribution analysis',
                   ),
                   const SizedBox(height: 12),
-                  const SizedBox(
-                    height: 220,
+                  SizedBox(
+                    height: 250,
                     child: LunaCard(
-                      child: PhaseDonutChart(phaseDays: {
-                        'Menstrual': 5,
-                        'Follicular': 9,
-                        'Ovulation': 2,
-                        'Luteal': 12,
-                      }),
+                      child: Column(
+                        children: [
+                          const Expanded(
+                            child: PhaseDonutChart(phaseDays: {
+                              'Menstrual': 5,
+                              'Follicular': 9,
+                              'Ovulation': 2,
+                              'Luteal': 12,
+                            }),
+                          ),
+                          const SizedBox(height: 12),
+                          Wrap(
+                            spacing: 12,
+                            runSpacing: 4,
+                            alignment: WrapAlignment.center,
+                            children: [
+                              _legendItem('Menstrual', AppTheme.menstrualColor),
+                              _legendItem('Follicular', AppTheme.follicularColor),
+                              _legendItem('Ovulation', AppTheme.ovulationColor),
+                              _legendItem('Luteal', AppTheme.lutealColor),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -230,14 +248,38 @@ class _TrendsScreenState extends State<TrendsScreen> {
                   ),
                   const SizedBox(height: 12),
                   SizedBox(
-                    height: 260,
+                    height: 340,
                     child: LunaCard(
-                      child: WellnessRadarChart(scores: {
-                        'sleep': (_calculateAvg('sleepHours') / 8).clamp(0.0, 1.0),
-                        'heart': (1 - ((_calculateAvg('heartRate') - 60) / 40)).clamp(0.0, 1.0),
-                        'temp': ((_calculateAvg('temperature') - 36) / 1.5).clamp(0.0, 1.0),
-                        'activity': 0.65,
-                      }),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: WellnessRadarChart(scores: {
+                              'sleep': (_calculateAvg('sleepHours') / 8).clamp(0.0, 1.0),
+                              'heart': (1 - ((_calculateAvg('heartRate') - 60) / 40)).clamp(0.0, 1.0),
+                              'temp': ((_calculateAvg('temperature') - 36) / 1.5).clamp(0.0, 1.0),
+                              'activity': 0.65,
+                            }),
+                          ),
+                          const SizedBox(height: 16),
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: AppTheme.primary.withOpacity(0.05),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              _getRadarInsight({
+                                'sleep': (_calculateAvg('sleepHours') / 8).clamp(0.0, 1.0),
+                                'heart': (1 - ((_calculateAvg('heartRate') - 60) / 40)).clamp(0.0, 1.0),
+                                'temp': ((_calculateAvg('temperature') - 36) / 1.5).clamp(0.0, 1.0),
+                                'activity': 0.65,
+                              }),
+                              style: AppTheme.body.copyWith(fontSize: 12, fontStyle: FontStyle.italic),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -492,5 +534,34 @@ class _TrendsScreenState extends State<TrendsScreen> {
         )),
       ]),
     );
+  }
+
+  Widget _legendItem(String label, Color color) => Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Container(width: 8, height: 8, decoration: BoxDecoration(color: color, shape: BoxShape.circle)),
+      const SizedBox(width: 4),
+      Text(label, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w500)),
+    ],
+  );
+
+  String _getRadarInsight(Map<String, double> scores) {
+    final sleep = scores['sleep'] ?? 0;
+    final heart = scores['heart'] ?? 0;
+    final temp = scores['temp'] ?? 0;
+
+    String text = "";
+    if (sleep > 0.75 && temp < 0.5) {
+      text = "You are resting perfectly (High Sleep), but your metabolism is currently in a 'cool' state (Low Temp). This is why your balance shape looks like an upward-pointing kite.";
+    } else if (sleep > 0.8 && heart > 0.8 && temp > 0.5) {
+      text = "Your wellness shape is a balanced diamond today. This indicates a high state of physiological recovery and metabolic stability.";
+    } else if (sleep < 0.6) {
+      text = "Your balance is skewed due to sleep debt. Prioritizing rest will help expand your wellness shape and restore metabolic equilibrium.";
+    } else if (heart < 0.6) {
+      text = "Your shape indicates cardiovascular strain. Consider reducing high-intensity stress to allow your biometric balance to normalize.";
+    } else {
+      text = "Your wellness shape is shifting typically for your current cycle phase. Monitor for metabolic stability as you transition.";
+    }
+    return text;
   }
 }
