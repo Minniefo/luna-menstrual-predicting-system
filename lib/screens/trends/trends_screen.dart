@@ -204,6 +204,45 @@ class _TrendsScreenState extends State<TrendsScreen> {
                   const SizedBox(height: 24),
 
                   // ── 5. Smart Findings (Backend-driven) ────────────────────
+                  // ── 5. Phase Proportion (Viva Component A) ──────────────
+                  const SectionHeader(
+                    title: 'Phase Proportion',
+                    subtitle: 'Cycle distribution analysis',
+                  ),
+                  const SizedBox(height: 12),
+                  const SizedBox(
+                    height: 220,
+                    child: LunaCard(
+                      child: PhaseDonutChart(phaseDays: {
+                        'Menstrual': 5,
+                        'Follicular': 9,
+                        'Ovulation': 2,
+                        'Luteal': 12,
+                      }),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+
+                  // ── 6. Biometric Balance (Viva Component B) ──────────────
+                  const SectionHeader(
+                    title: 'Biometric Balance',
+                    subtitle: 'Multivariate sensor correlation',
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    height: 260,
+                    child: LunaCard(
+                      child: WellnessRadarChart(scores: {
+                        'sleep': (_calculateAvg('sleepHours') / 8).clamp(0.0, 1.0),
+                        'heart': (1 - ((_calculateAvg('heartRate') - 60) / 40)).clamp(0.0, 1.0),
+                        'temp': ((_calculateAvg('temperature') - 36) / 1.5).clamp(0.0, 1.0),
+                        'activity': 0.65,
+                      }),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+
+                  // ── 7. Clinical Insights ─────────────────────────────────
                   const SectionHeader(title: 'Clinical Insights'),
                   const SizedBox(height: 12),
                   ..._insights.map((msg) => _insightTile(msg)).toList(),

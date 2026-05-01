@@ -809,3 +809,83 @@ class CycleDurationChart extends StatelessWidget {
     ));
   }
 }
+
+// ── Wellness Radar Chart ─────────────────────────────────────────────────────
+class WellnessRadarChart extends StatelessWidget {
+  final Map<String, double> scores; // 0.0 to 1.0 for Sleep, HR, Temp, Activity
+  const WellnessRadarChart({super.key, required this.scores});
+
+  @override
+  Widget build(BuildContext context) {
+    return AspectRatio(
+      aspectRatio: 1.3,
+      child: RadarChart(
+        RadarChartData(
+          radarShape: RadarShape.polygon,
+          radarTouchData: RadarTouchData(enabled: false),
+          ticksTextStyle: const TextStyle(color: Colors.transparent, fontSize: 10),
+          tickCount: 4,
+          getTitle: (index, angle) {
+            final titles = ['Sleep', 'Heart', 'Temp', 'Activity'];
+            return RadarChartTitle(text: titles[index % titles.length], angle: angle);
+          },
+          titleTextStyle: AppTheme.caption.copyWith(fontWeight: FontWeight.bold),
+          dataSets: [
+            RadarDataSet(
+              fillColor: AppTheme.primary.withOpacity(0.2),
+              borderColor: AppTheme.primary,
+              entryRadius: 3,
+              dataEntries: [
+                RadarEntry(value: (scores['sleep'] ?? 0.7) * 100),
+                RadarEntry(value: (scores['heart'] ?? 0.8) * 100),
+                RadarEntry(value: (scores['temp'] ?? 0.6) * 100),
+                RadarEntry(value: (scores['activity'] ?? 0.5) * 100),
+              ],
+            ),
+          ],
+          radarBorderData: const BorderSide(color: AppTheme.divider, width: 1),
+          tickBorderData: const BorderSide(color: AppTheme.divider, width: 1),
+          gridBorderData: const BorderSide(color: AppTheme.divider, width: 1),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Phase Donut Chart ────────────────────────────────────────────────────────
+class PhaseDonutChart extends StatelessWidget {
+  final Map<String, int> phaseDays;
+  const PhaseDonutChart({super.key, required this.phaseDays});
+
+  @override
+  Widget build(BuildContext context) {
+    final total = phaseDays.values.fold(0, (sum, val) => sum + val);
+    if (total == 0) return const NoDataWidget(message: 'No phase data available');
+
+    return AspectRatio(
+      aspectRatio: 1.3,
+      child: PieChart(
+        PieChartData(
+          sectionsSpace: 4,
+          centerSpaceRadius: 40,
+          sections: [
+            _section(AppTheme.menstrualColor, (phaseDays['Menstrual'] ?? 5).toDouble(), 'Menstrual'),
+            _section(AppTheme.follicularColor, (phaseDays['Follicular'] ?? 9).toDouble(), 'Follicular'),
+            _section(AppTheme.ovulationColor, (phaseDays['Ovulation'] ?? 2).toDouble(), 'Ovulation'),
+            _section(AppTheme.lutealColor, (phaseDays['Luteal'] ?? 12).toDouble(), 'Luteal'),
+          ],
+        ),
+      ),
+    );
+  }
+
+  PieChartSectionData _section(Color color, double value, String label) {
+    return PieChartSectionData(
+      color: color,
+      value: value,
+      title: '${value.toInt()}d',
+      radius: 35,
+      titleStyle: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.white),
+    );
+  }
+}
