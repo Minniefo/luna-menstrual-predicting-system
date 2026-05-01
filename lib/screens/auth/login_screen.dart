@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../theme/app_theme.dart';
 import '../../services/auth_provider.dart';
+import '../../widgets/shared_widgets.dart';
 import '../main_shell.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.all(28),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             const SizedBox(height: 20),
-            const Text('🌙', style: TextStyle(fontSize: 48)),
+            LunaLogo(size: 48, showText: false),
             const SizedBox(height: 16),
             Text('Welcome back', style: AppTheme.heading1),
             const SizedBox(height: 4),

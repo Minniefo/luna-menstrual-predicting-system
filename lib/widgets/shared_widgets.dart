@@ -12,16 +12,61 @@ class LunaAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(60);
 
+  void _showAbout(BuildContext context) => showAboutDialog(
+    context: context,
+    applicationName: 'Luna',
+  );
+
   @override
   Widget build(BuildContext context) => AppBar(
     leading: leading,
     title: Row(children: [
-      const Text('🌙 ', style: TextStyle(fontSize: 18)),
-      Text(title, style: AppTheme.heading3),
+      ShaderMask(
+        shaderCallback: (bounds) => AppTheme.primaryGradient.createShader(bounds),
+        child: const Icon(Icons.mode_night_rounded, color: Colors.white, size: 22),
+      ),
+      const SizedBox(width: 8),
+      Text(title, style: AppTheme.heading3.copyWith(letterSpacing: -0.3)),
     ]),
     actions: actions,
     backgroundColor: Colors.transparent,
     elevation: 0,
+  );
+}
+
+// ── Luna Logo ────────────────────────────────────────────────────────────────
+class LunaLogo extends StatelessWidget {
+  final double size;
+  final bool showText;
+  final double fontSize;
+
+  const LunaLogo({
+    super.key,
+    this.size = 24,
+    this.showText = true,
+    this.fontSize = 24,
+  });
+
+  @override
+  Widget build(BuildContext context) => Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      ShaderMask(
+        shaderCallback: (bounds) => AppTheme.primaryGradient.createShader(bounds),
+        child: Icon(Icons.mode_night_rounded, color: Colors.white, size: size),
+      ),
+      if (showText) ...[
+        const SizedBox(width: 8),
+        Text('Luna',
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: fontSize,
+            color: AppTheme.primary,
+            letterSpacing: -0.5,
+          ),
+        ),
+      ],
+    ],
   );
 }
 

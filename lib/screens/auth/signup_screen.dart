@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../theme/app_theme.dart';
 import '../../services/auth_provider.dart';
+import '../../widgets/shared_widgets.dart';
 import '../main_shell.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -38,7 +39,7 @@ class _SignupScreenState extends State<SignupScreen> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text('Join Luna 🌙', style: AppTheme.heading2),
+            LunaLogo(fontSize: 22),
             const SizedBox(height: 4),
             Text('Set up your wellness profile', style: AppTheme.body),
             const SizedBox(height: 24),

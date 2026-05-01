@@ -345,7 +345,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   void _showAbout(BuildContext context) => showAboutDialog(
     context: context,
-    applicationName: '🌙 Luna',
+    applicationName: 'Luna',
     applicationVersion: '1.0.0',
     applicationLegalese: 'Wearable Menstrual Wellness Monitoring Dashboard\nIT4031 – SLIIT Data Science',
     children: [

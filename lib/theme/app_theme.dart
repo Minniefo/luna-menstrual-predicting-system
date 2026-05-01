@@ -114,4 +114,15 @@ class AppTheme {
       default:                    return '🌸';
     }
   }
+
+  static IconData phaseIcon(String phase) {
+    switch (phase.toLowerCase()) {
+      case 'menstrual':           return Icons.water_drop_rounded;
+      case 'follicular':          return Icons.auto_awesome_rounded;
+      case 'ovulation':
+      case 'fertility':           return Icons.wb_sunny_rounded;
+      case 'luteal':              return Icons.mode_night_rounded;
+      default:                    return Icons.circle;
+    }
+  }
 }

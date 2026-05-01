@@ -163,13 +163,22 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildHeader(String greeting, String name) => Row(children: [
     Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text('$greeting, $name 👋', style: AppTheme.caption.copyWith(fontSize: 13)),
-      const Text('🌙 Luna',
-        style: TextStyle(
-          fontWeight: FontWeight.w700,
-          fontSize: 24,
-          color: AppTheme.primary,
+      const SizedBox(height: 4),
+      Row(children: [
+        ShaderMask(
+          shaderCallback: (bounds) => AppTheme.primaryGradient.createShader(bounds),
+          child: const Icon(Icons.mode_night_rounded, color: Colors.white, size: 28),
         ),
-      ),
+        const SizedBox(width: 8),
+        const Text('Luna',
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 24,
+            color: AppTheme.primary,
+            letterSpacing: -0.5,
+          ),
+        ),
+      ]),
     ])),
     IconButton(
       icon: const Icon(Icons.medical_services_outlined, color: AppTheme.primary),
@@ -195,7 +204,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return LunaCard(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Row(children: [
-        Text(AppTheme.phaseEmoji(phaseName), style: const TextStyle(fontSize: 30)),
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: AppTheme.phaseColor(phaseName).withOpacity(0.1),
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            AppTheme.phaseIcon(phaseName),
+            color: AppTheme.phaseColor(phaseName),
+            size: 28,
+          ),
+        ),
         const SizedBox(width: 12),
         Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(phaseName, style: AppTheme.heading3),
@@ -366,10 +386,10 @@ class _HomeScreenState extends State<HomeScreen> {
   // ── Phase Timeline ────────────────────────────────────────────────────────
   Widget _buildPhaseTimeline() {
     const phases = [
-      ('Menstrual', '🔴', AppTheme.menstrualColor),
-      ('Follicular','🌱', AppTheme.follicularColor),
-      ('Ovulation', '⭐', AppTheme.ovulationColor),
-      ('Luteal',    '🌙', AppTheme.lutealColor),
+      ('Menstrual', Icons.water_drop_rounded, AppTheme.menstrualColor),
+      ('Follicular',Icons.auto_awesome_rounded, AppTheme.follicularColor),
+      ('Ovulation', Icons.wb_sunny_rounded, AppTheme.ovulationColor),
+      ('Luteal',    Icons.mode_night_rounded, AppTheme.lutealColor),
     ];
     final currentPhase =
         (_overview?['phase']?['phase'] as String?) ?? 'Follicular';
@@ -384,7 +404,13 @@ class _HomeScreenState extends State<HomeScreen> {
               color: isActive ? p.$3 : p.$3.withOpacity(0.12),
               shape: BoxShape.circle,
             ),
-            child: Center(child: Text(p.$2, style: const TextStyle(fontSize: 16))),
+            child: Center(
+              child: Icon(
+                p.$2,
+                color: isActive ? Colors.white : p.$3,
+                size: 18,
+              ),
+            ),
           ),
           const SizedBox(height: 4),
           Text(
