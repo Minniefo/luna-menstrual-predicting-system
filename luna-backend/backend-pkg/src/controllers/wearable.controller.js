@@ -5,23 +5,29 @@ const mongoose      = require('mongoose');
 const User          = require('../models/User');
 const SensorReading = require('../models/SensorReading');
 const { fillDailyGaps } = require('../utils/data.utils');
+const healthService = require('../services/health.service');
 
 exports.addReading = async (req, res) => {
   try {
-    const { heartRate, temperature, sleepDisturbances } = req.body;
+    const { heartRate, temperature, sleepDisturbances, sleepHours } = req.body;
+
+    // Auto-calculate quality if not provided
+    const hrs  = sleepHours || 0;
+    const dist = sleepDisturbances || 0;
+    const quality = healthService.classifySleep(hrs, dist).label;
 
     const reading = new SensorReading({
       userId: req.user.id,
       date: new Date().toISOString().split('T')[0],
       heartRate,
       temperature,
-      sleepDisturbances,
+      sleepDisturbances: dist,
+      sleepHours: hrs,
+      sleepQuality: quality,
     });
 
     await reading.save();
-
-    console.log("Saved:", reading);
-
+    console.log("Saved Reading:", reading);
     res.status(201).json({ success: true });
 
   } catch (err) {
@@ -37,13 +43,28 @@ exports.syncFromWearableBackend = async (req, res) => {
       return res.status(400).json({ success: false, message: 'user_id and readings array required.' });
     }
 
-    const ops = readings.map(r => ({
-      updateOne: {
-        filter: { userId: user_id, date: r.date },
-        update: { $set: { heartRate: r.heartRate, temperature: r.temperature, sleepHours: r.sleepHours, sleepDisturbances: r.sleepDisturbances } },
-        upsert: true
-      }
-    }));
+    const ops = readings.map(r => {
+      // Ensure quality is computed for the sync batch
+      const hrs = r.sleepHours || 0;
+      const dist = r.sleepDisturbances || 0;
+      const quality = r.sleepQuality || healthService.classifySleep(hrs, dist).label;
+
+      return {
+        updateOne: {
+          filter: { userId: user_id, date: r.date },
+          update: { 
+            $set: { 
+              heartRate: r.heartRate, 
+              temperature: r.temperature, 
+              sleepHours: hrs, 
+              sleepDisturbances: dist,
+              sleepQuality: quality
+            } 
+          },
+          upsert: true
+        }
+      };
+    });
     
     if (ops.length > 0) {
       await SensorReading.bulkWrite(ops);
@@ -73,18 +94,21 @@ exports.syncFromWearableBackend = async (req, res) => {
 exports.ingestFromESP32 = async (req, res) => {
   try {
     // Map ESP32 fields to Backend Schema
-    // ESP32 sends: temp_c, bpm, acc_mag, lead_off
     const { temp_c, bpm, acc_mag } = req.body;
     
     const hardcodedUserId = "69e8dd03cdb7e640031b6686"; // Sara's ID
+    const dist = acc_mag > 1.1 ? 1 : 0;
+    const hrs  = 8; // Placeholder for demo
+    const quality = healthService.classifySleep(hrs, dist).label;
 
     const reading = new SensorReading({
       userId: hardcodedUserId,
       date: new Date().toISOString().split('T')[0],
       heartRate: bpm || 72,
       temperature: temp_c || 36.6,
-      sleepDisturbances: acc_mag > 1.1 ? 1 : 0, // Simplified motion-to-disturbance mapping
-      sleepHours: 8 // Placeholder
+      sleepDisturbances: dist,
+      sleepHours: hrs,
+      sleepQuality: quality
     });
 
     await reading.save();
@@ -93,7 +117,7 @@ exports.ingestFromESP32 = async (req, res) => {
     res.status(201).json({ 
       success: true, 
       prediction: "Processing", 
-      probability: 0.85 // Mock confirmation for OLED feedback
+      probability: 0.85 
     });
 
   } catch (err) {
